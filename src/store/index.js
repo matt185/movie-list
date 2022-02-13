@@ -38,7 +38,6 @@ export default new Vuex.Store({
       let data = await apiSettings.fetchMovies(searchMovie,page)
       commit("saveNewMovie",data.results)
     }
-    
   },
   getters: {
     movies(state) {

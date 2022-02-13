@@ -1,11 +1,14 @@
 <template>
   <div id="app">
   <NavBar/>
-    <router-view/>
+  <router-view/>
   </div>
 </template>
+
 <script>
+
 import NavBar from "./components/NavBar.vue"
+
 export default {
   components:{NavBar},
   async beforeCreate() {
@@ -15,7 +18,9 @@ export default {
 </script>
 
 <style lang="scss">
+
 @import "~@/assets/scss/vendors/bootstrap-vue/index";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
