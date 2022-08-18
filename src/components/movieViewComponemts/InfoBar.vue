@@ -53,8 +53,8 @@ export default {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
-  
   }
+  
   .column {
     display: flex;
     align-items: center;

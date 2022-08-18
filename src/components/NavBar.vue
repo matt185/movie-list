@@ -1,16 +1,11 @@
 <template>
   <b-navbar class="header d-flex justify-content-center align-items-center" toggleable="lg" variant="info" fixed="top">
-  <b-navbar-brand class="h-100 d-flex justify-content-center align-items-center" href="/">
-      <img　class="mr-2 h-75" alt="Vue logo" src="../assets/images/tmdb_logo.svg">
-      <h4 class="mb-0">Movie List</h4>
-</b-navbar-brand></b-navbar>
+    <b-navbar-brand class="h-100 d-flex justify-content-center align-items-center" href="/">
+        <img　class="mr-2 h-75" alt="Vue logo" src="../assets/images/tmdb_logo.svg">
+        <h4 class="mb-0">Movie List</h4>
+    </b-navbar-brand>
+  </b-navbar>
 </template>
-
-<script>
-export default {
-
-}
-</script>
 
 <style lang="scss" scoped>
 .bg-info {

@@ -13,20 +13,24 @@
         :Budget="movieData.movie.budget"
         :profit="movieData.movie.revenue"
       />
+      <ActorGrid :actors="movieData.actors"/>
   </div>
 </template>
 
 <script>
 
 import API from "../utils/api"
-import Headline from "../components/movieViewComponemts/Headline.vue";
+import Headline from "../components/movieViewComponemts/Headline.vue"
 import Info from "../components/movieViewComponemts/Info.vue"
 import InfoBar from "../components/movieViewComponemts/InfoBar.vue"
+import ActorGrid from "../components/movieViewComponemts/ActorGrid.vue"
+
 export default {
     components:{
         Headline,
         Info,
         InfoBar,
+        ActorGrid
     },
     data:()=>{
         return {
@@ -42,13 +46,18 @@ export default {
         const directors = credits.crew.filter(
             (member) => member.job === "Director"
         )
+        if (!movie || !credits || !directors){
+             this.movieData ={
+                movie:{},
+                actors: {},
+                directors:[]
+            }
+        }
         this.movieData ={
             movie,
             actors: credits.cast,
             directors
         }
-        
-
     },
 }
 </script>

@@ -26,7 +26,6 @@ export default {
 <style lang="scss" scoped>
 .btn:hover {
   color: white !important;
- 
 }
 .btn-outline-secondary {
   color: $vue-gray;

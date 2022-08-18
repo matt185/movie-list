@@ -31,8 +31,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-
 <style lang="scss" scoped>
 .popular {
   background-size: 100%, 100%;
@@ -66,7 +64,6 @@ h1 {
     font-size: 1.2rem;
   }
 }
-
 p {
   font: size 1.2rem;
 
